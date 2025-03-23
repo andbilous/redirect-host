@@ -1,49 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Redirecionando...</title>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        font-family: sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        text-align: center;
-        flex-direction: column;
-      }
-      .loader {
-        margin: 20px;
-        width: 40px;
-        height: 40px;
-        border: 5px solid #ccc;
-        border-top: 5px solid #007aff;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-      }
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="loader"></div>
-    <p>Redirecionando... Por favor, aguarde.</p>
-    <script>
-      setTimeout(() => {
-        try {
-          top.location.href = "https://mnt.lucky-official-top.com/?sub1=337&sub2=test&sub3=abc&sub4=mt_1&sub5=xyz&openExternalBrowser=1";
-        } catch (e) {
-          window.location.href = "https://mnt.lucky-official-top.com/?sub1=337&sub2=test&sub3=abc&sub4=mt_1&sub5=xyz&openExternalBrowser=1";
-        }
-      }, 500);
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Abrir no navegador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #007aff;
+      color: white;
+      padding: 14px 24px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .note {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Este link precisa ser aberto no navegador</h1>
+  <p>Clique no botão abaixo para abrir o conteúdo no Safari ou Chrome:</p>
+
+  <a class="button" href="https://mnt.lucky-official-top.com/?sub1=337&sub2=test&sub3=abc&sub4=mt_1&sub5=xyz&openExternalBrowser=1" target="_blank">
+    Abrir no navegador
+  </a>
+
+  <p class="note">Se você estiver no Telegram, toque em "⋮" e escolha <strong>"Abrir no navegador"</strong>.</p>
+</body>
 </html>
